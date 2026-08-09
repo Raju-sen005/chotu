@@ -1,0 +1,1721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Ordering & Restaurant Management Software | Chotu</title>
+    <meta
+      name="description"
+      content="Chotu is a QR ordering and restaurant management platform for restaurants, cafes, QSRs and hotels. Manage QR menus, table orders, kitchen operations, billing and payments from one platform."
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <meta name="author" content="Chotu" />
+    <!-- <meta
+      name="keywords"
+      content="restaurant management software, QR ordering system, QR menu for restaurants, restaurant POS, restaurant billing software, kitchen display system, table ordering system, restaurant ordering software, restaurant POS India"
+    /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#EC003F" />
+    <link rel="icon" type="image/png" href="./cho.png" />
+    <link rel="apple-touch-icon" href="./cho.png" />
+    <link rel="canonical" href="https://chotu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chotu" />
+    <meta
+      property="og:title"
+      content="QR Ordering & Restaurant Management Software | Chotu"
+    />
+    <meta
+      property="og:description"
+      content="Manage QR ordering, table orders, kitchen operations, billing and restaurant workflows with Chotu."
+    />
+    <!-- <meta property="og:url" content="https://YOUR-DOMAIN.com/" />
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg" /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Chotu restaurant management platform"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="QR Ordering & Restaurant Management Software | Chotu"
+    />
+    <meta
+      name="twitter:description"
+      content="QR ordering, kitchen management, table orders and billing for modern restaurants."
+    />
+    <!-- <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS (CDN, JIT) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#EC003F", // Zomato-style vibrant red/rose
+              primaryDark: "#D63A4A",
+              primaryDeep: "#B72E3D",
+              ink: "#1B1D21", // near-black slate
+              inkSoft: "#63666E",
+              line: "#ECEDEF",
+              bgSoft: "#F7F7F9",
+              gold: "#FFB100",
+              mint: "#0FA36B",
+            },
+            fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] },
+            maxWidth: { content: "1200px" },
+            boxShadow: {
+              pop: "0 10px 24px -8px rgba(239,79,95,0.45)",
+              popLg: "0 20px 40px -12px rgba(239,79,95,0.4)",
+              card: "0 2px 6px rgba(20,20,22,0.05), 0 12px 28px -14px rgba(20,20,22,0.14)",
+              cardHi:
+                "0 4px 10px rgba(20,20,22,0.06), 0 24px 44px -16px rgba(20,20,22,0.2)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Structured Data: Chotu Software -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Chotu",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Restaurant Management Software",
+        "operatingSystem": "Web",
+        "description": "Chotu is a QR ordering and restaurant management platform for restaurants, cafes, QSRs and hotels. Manage QR menus, table orders, kitchen operations, billing and payments from one platform.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter",
+            "price": "999",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth",
+            "price": "2499",
+            "priceCurrency": "INR"
+          }
+        ],
+        "featureList": [
+          "QR ordering",
+          "Digital restaurant menu",
+          "Table ordering",
+          "Kitchen display",
+          "Restaurant billing",
+          "WhatsApp invoicing",
+          "Order analytics",
+          "Menu and inventory management"
+        ]
+      }
+    </script>
+
+    <!-- Structured Data: Chotu Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Chotu",
+        "description": "QR ordering and restaurant management platform for restaurants in India."
+      }
+    </script>
+
+    <!-- Structured Data: Chotu FAQ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Chotu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chotu is a QR ordering and restaurant management platform that helps restaurants manage digital menus, table orders, kitchen operations, billing and payments from one platform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do customers need to install an app to place an order?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Customers can scan the restaurant's table QR code using their phone camera and open the digital menu without downloading an app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does QR ordering work in a restaurant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Guests scan the QR code at their table, open the digital menu, select items and place their order. The order is sent to the kitchen display with the table information so staff can prepare and serve it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Chotu provide a digital menu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Chotu provides a digital restaurant menu that customers can open directly from the table QR code. Restaurants can showcase categories, photos and item availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Chotu send orders to the kitchen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Orders placed through the QR ordering system are shown on the kitchen display along with the table information, helping restaurant teams reduce order mix-ups."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Chotu support restaurant billing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Chotu supports restaurant billing and WhatsApp invoicing, allowing teams to generate bills and share invoices with customers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Chotu charge commission on orders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chotu currently offers 0% commission on orders. The pricing plans are subscription-based, with no commission on orders."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Chotu cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chotu's Starter plan is ₹999 per month and the Growth plan is ₹2,499 per month. Enterprise pricing is customized for multi-outlet restaurants and franchises."
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-feature-settings: "ss01";
+      }
+
+      /* Hero backdrop — built entirely from gradients/lighting (no stock photo),
+     evokes a warm, bustling restaurant scene under a dark overlay. */
+      .hero-bg {
+        background: url(./chotu-restaurant-qr-ordering-hero.webp) center/cover
+          no-repeat;
+      }
+      .hero-grain {
+        background-image: radial-gradient(
+          rgba(255, 255, 255, 0.06) 1px,
+          transparent 1px
+        );
+        background-size: 22px 22px;
+      }
+
+      @keyframes marquee-x {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .marquee-track {
+        animation: marquee-x 30s linear infinite;
+      }
+      .marquee-pause:hover .marquee-track {
+        animation-play-state: paused;
+      }
+      .fade-edge {
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+      }
+
+      @keyframes pulse-dot {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.4);
+          opacity: 0.5;
+        }
+      }
+      .live-dot {
+        animation: pulse-dot 1.6s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition: none !important;
+        }
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 1.5px solid #ffffff;
+        outline-offset: 2px;
+      }
+
+      .btn-tactile {
+        transition:
+          transform 0.12s ease,
+          box-shadow 0.12s ease,
+          background-color 0.12s ease;
+      }
+      .btn-tactile:hover {
+        transform: translateY(-2px);
+      }
+      .btn-tactile:active {
+        transform: translateY(1px) scale(0.98);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-ink antialiased font-sans">
+    <!-- =========================================================
+     NAVBAR
+========================================================= -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-line"
+    >
+      <div
+        class="max-w-content mx-auto px-6 lg:px-8 h-[74px] flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-2 shrink-0">
+          <span
+            class="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center font-extrabold text-sm shadow-pop"
+            >C</span
+          >
+          <span class="text-xl font-extrabold tracking-tight">Chotu</span>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-8 text-[14.5px] font-bold text-ink/70"
+        >
+          <a href="#workflow" class="hover:text-ink transition-colors"
+            >Workflow</a
+          >
+          <a href="#partners" class="hover:text-ink transition-colors"
+            >Partners</a
+          >
+          <a href="#testimonials" class="hover:text-ink transition-colors"
+            >Reviews</a
+          >
+          <a href="#pricing" class="hover:text-ink transition-colors"
+            >Pricing</a
+          >
+          <a href="#faq" class="hover:text-ink transition-colors"> FAQ </a>
+        </nav>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a
+            href="https://chotu-frontend-ngph.onrender.com"
+            class="hidden sm:inline-flex text-[14.5px] font-bold text-ink/70 hover:text-ink px-3 py-2 transition-colors"
+            >Log in</a
+          >
+          <a
+            href="https://chotu-frontend-ngph.onrender.com"
+            class="btn-tactile inline-flex items-center gap-1.5 bg-primary hover:bg-primaryDark text-white text-[13.5px] sm:text-[14.5px] font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-pop whitespace-nowrap"
+          >
+            Get Started
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              class="hidden sm:block"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+
+          <!-- Mobile menu toggle (hidden on lg and up) -->
+          <button
+            id="menuBtn"
+            aria-label="Open menu"
+            aria-expanded="false"
+            class="lg:hidden w-10 h-10 rounded-lg border border-line flex items-center justify-center text-ink shrink-0"
+          >
+            <svg
+              id="menuIconOpen"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="menuIconClose"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              class="hidden"
+            >
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav panel -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden hidden border-t border-line bg-white"
+      >
+        <nav
+          class="max-w-content mx-auto px-6 py-4 flex flex-col gap-1 text-[15px] font-bold text-ink/80"
+        >
+          <a
+            href="#workflow"
+            class="py-2.5 border-b border-line hover:text-primary transition-colors"
+            >Workflow</a
+          >
+          <a
+            href="#partners"
+            class="py-2.5 border-b border-line hover:text-primary transition-colors"
+            >Partners</a
+          >
+          <a
+            href="#testimonials"
+            class="py-2.5 border-b border-line hover:text-primary transition-colors"
+            >Reviews</a
+          >
+          <a
+            href="#pricing"
+            class="py-2.5 border-b border-line hover:text-primary transition-colors"
+            >Pricing</a
+          >
+          <a
+            href="#faq"
+            class="py-2.5 border-b border-line hover:text-primary transition-colors"
+            >FAQ</a
+          >
+          <a
+            href="https://chotu-frontend-ngph.onrender.com"
+            class="py-2.5 hover:text-primary transition-colors"
+            >Log in</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     HERO — dark, high-energy, search-centric
+========================================================= -->
+    <section class="relative hero-bg overflow-hidden">
+      <div class="absolute inset-0 hero-grain opacity-40"></div>
+
+      <div
+        class="relative max-w-content mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-28 text-center"
+      >
+        <span
+          class="inline-flex items-center gap-2 bg-white/10 border border-white/15 text-white text-[12.5px] font-bold uppercase tracking-wide px-4 py-1.5 rounded-full backdrop-blur-sm"
+        >
+          <span class="w-2 h-2 rounded-full bg-primary live-dot"></span>
+          Exclusive Launch Offer: 0% Commission for the First 100 Restaurants!
+        </span>
+
+        <h1
+          class="mt-7 font-extrabold text-white leading-[1.02] tracking-tight text-[clamp(2.4rem,6vw,4.4rem)] max-w-4xl mx-auto"
+        >
+          QR Ordering for Restaurants.<br class="hidden sm:block" />
+          <span class="text-primary">Without the Chaos.</span>
+        </h1>
+
+        <p
+          class="mt-6 text-white/70 text-[17px] lg:text-[18px] max-w-xl mx-auto leading-relaxed font-medium"
+        >
+          Chotu helps restaurants manage QR ordering, digital menus, table
+          orders, kitchen operations, billing and payments — all from one simple
+          platform.
+        </p>
+
+        <!-- Zomato-style dominant search bar -->
+        <div class="mt-10 max-w-2xl mx-auto">
+          <div
+            class="bg-white rounded-2xl shadow-popLg p-2 flex flex-col sm:flex-row items-stretch gap-2"
+          >
+            <div class="flex items-center gap-3 flex-1 px-4 py-3.5 min-w-0">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#63666E"
+                stroke-width="2.2"
+                class="shrink-0"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21l-4.3-4.3" />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search restaurant type — Cafe, QSR, Fine Dine..."
+                class="w-full min-w-0 bg-transparent text-[14.5px] sm:text-[15px] font-semibold text-ink placeholder-inkSoft/70 outline-none"
+              />
+            </div>
+            <div class="hidden sm:block w-px bg-line my-2"></div>
+            <div
+              class="flex items-center gap-3 px-4 py-3.5 sm:w-40 border-t sm:border-t-0 border-line"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#63666E"
+                stroke-width="2.2"
+                class="shrink-0"
+              >
+                <path
+                  d="M12 21s7-6.6 7-11.5A7 7 0 105 9.5C5 14.4 12 21 12 21z"
+                />
+                <circle cx="12" cy="9.5" r="2.4" />
+              </svg>
+              <input
+                type="text"
+                placeholder="City"
+                class="w-full min-w-0 bg-transparent text-[14.5px] sm:text-[15px] font-semibold text-ink placeholder-inkSoft/70 outline-none"
+              />
+            </div>
+            <button
+              class="btn-tactile bg-primary hover:bg-primaryDark text-white font-extrabold text-[14.5px] sm:text-[15px] px-6 sm:px-7 py-3.5 rounded-xl shadow-pop whitespace-nowrap"
+            >
+              Get Free Demo
+            </button>
+          </div>
+
+          <!-- quick chips -->
+          <div class="mt-4 flex flex-wrap justify-center gap-2.5">
+            <span
+              class="bg-white/10 border border-white/15 text-white text-[12.5px] font-bold px-3.5 py-1.5 rounded-full backdrop-blur-sm"
+              >QR Ordering</span
+            >
+            <span
+              class="bg-white/10 border border-white/15 text-white text-[12.5px] font-bold px-3.5 py-1.5 rounded-full backdrop-blur-sm"
+              >Kitchen Display</span
+            >
+            <span
+              class="bg-white/10 border border-white/15 text-white text-[12.5px] font-bold px-3.5 py-1.5 rounded-full backdrop-blur-sm"
+              >Instant Billing</span
+            >
+            <span
+              class="bg-white/10 border border-white/15 text-white text-[12.5px] font-bold px-3.5 py-1.5 rounded-full backdrop-blur-sm"
+              >0% Commission</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- stat strip -->
+      <div
+        class="relative border-t border-white/10 bg-black/20 backdrop-blur-sm"
+      >
+        <div
+          class="max-w-content mx-auto px-6 lg:px-8 py-6 grid grid-cols-3 sm:grid-cols-3 gap-6 text-center"
+        >
+          <!-- <div>
+            <p class="text-white text-2xl font-extrabold">1,200+</p>
+            <p class="text-white/50 text-[12.5px] font-semibold mt-0.5">
+              Restaurants live
+            </p>
+          </div> -->
+          <div>
+            <p class="text-white text-2xl font-extrabold">4.8★</p>
+            <p class="text-white/50 text-[12.5px] font-semibold mt-0.5">
+              Owner rating
+            </p>
+          </div>
+          <div>
+            <p class="text-white text-2xl font-extrabold">0%</p>
+            <p class="text-white/50 text-[12.5px] font-semibold mt-0.5">
+              Order commission
+            </p>
+          </div>
+          <div>
+            <p class="text-white text-2xl font-extrabold">&lt;60s</p>
+            <p class="text-white/50 text-[12.5px] font-semibold mt-0.5">
+              Scan to order
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     WORKFLOW — 6 steps, bold cards
+========================================================= -->
+    <section
+      id="workflow"
+      class="max-w-content mx-auto px-6 lg:px-8 py-20 lg:py-24"
+    >
+      <div class="max-w-xl mx-auto text-center mb-14">
+        <span
+          class="text-[12.5px] font-extrabold tracking-wide uppercase text-primary"
+          >How it works</span
+        >
+        <h2
+          class="font-extrabold text-[clamp(1.9rem,3.4vw,2.7rem)] tracking-tight mt-3"
+        >
+          How QR Ordering Works for Restaurants
+        </h2>
+        <p class="text-inkSoft mt-3 font-medium leading-relaxed">
+          Every order follows the same fast path — phone camera to settled
+          table.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 01</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Scan Restaurant QR Code
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Guest scans the table QR with their phone camera — no app, no
+            download.
+          </p>
+        </div>
+
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M4 6h16M4 12h16M4 18h10" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 02</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Open the Digital Restaurant Menu
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Live menu opens instantly — categories, photos, real-time
+            availability.
+          </p>
+        </div>
+
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 6h15l-1.5 9h-12z" />
+              <circle cx="9" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 03</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Customers Place Table Orders
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Guests build their own cart and place the order right from the
+            table.
+          </p>
+        </div>
+
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="14" rx="2" />
+              <path d="M3 9h18" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 04</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Orders Reach the Kitchen Display
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Ticket lands on the kitchen display tagged with the table — no
+            mix-ups.
+          </p>
+        </div>
+
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 2C8 6 5 10 5 13a7 7 0 0014 0c0-3-3-7-7-11z" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 05</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Serve Orders at the Table
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Staff mark items ready, guests see live status — zero trips to the
+            counter.
+          </p>
+        </div>
+
+        <div
+          class="group rounded-2xl border border-line p-6 hover:shadow-cardHi hover:-translate-y-1 hover:border-transparent transition-all bg-white"
+        >
+          <div
+            class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M4 4h16v16H4z" />
+              <path d="M8 9h8M8 13h5" />
+            </svg>
+          </div>
+          <span class="text-[12px] font-extrabold text-primary">STEP 06</span>
+          <h3 class="font-extrabold text-lg mt-1.5 mb-2">
+            Generate Restaurant Bills
+          </h3>
+          <p class="text-[14.5px] text-inkSoft leading-relaxed font-medium">
+            Invoices print instantly at the counter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SOCIAL PROOF — Top rated partners (marquee)
+========================================================= -->
+    <section id="partners" class="py-20 lg:py-24 bg-bgSoft">
+      <div
+        class="max-w-content mx-auto px-6 lg:px-8 mb-12 text-center max-w-xl mx-auto"
+      >
+        <span
+          class="text-[12.5px] font-extrabold tracking-wide uppercase text-primary"
+          >Trusted on the floor</span
+        >
+        <h2
+          class="font-extrabold text-[clamp(1.9rem,3.4vw,2.7rem)] tracking-tight mt-3"
+        >
+          Restaurants Using Chotu QR Ordering
+        </h2>
+      </div>
+
+      <div class="marquee-pause fade-edge overflow-hidden">
+        <div class="marquee-track flex gap-5 w-max" id="partnerTrack"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     TESTIMONIALS
+========================================================= -->
+    <section
+      id="testimonials"
+      class="max-w-content mx-auto px-6 lg:px-8 py-20 lg:py-24"
+    >
+      <div class="max-w-xl mx-auto text-center mb-14">
+        <span
+          class="text-[12.5px] font-extrabold tracking-wide uppercase text-primary"
+          >From the owners running it</span
+        >
+        <h2
+          class="font-extrabold text-[clamp(1.9rem,3.4vw,2.7rem)] tracking-tight mt-3"
+        >
+          What Restaurant Owners Say About Chotu
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div
+          class="rounded-2xl border border-line p-7 bg-white hover:shadow-cardHi transition-shadow"
+        >
+          <div class="text-gold text-[15px] tracking-wide mb-4">★★★★★</div>
+          <p
+            class="text-[14.5px] leading-relaxed text-inkSoft font-medium mb-6"
+          >
+            "Order mix-ups on busy Friday nights used to cost us covers. Since
+            the kitchen screen shows the table number, that problem is gone."
+          </p>
+          <div class="flex items-center gap-3 pt-5 border-t border-line">
+            <div
+              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-extrabold text-[13px]"
+            >
+              RM
+            </div>
+            <div>
+              <p class="text-[13.5px] font-extrabold">Rohit Malhotra</p>
+              <p class="text-[12px] text-inkSoft font-medium">
+                Saffron Tadka, Jaipur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl border border-line p-7 bg-white hover:shadow-cardHi transition-shadow"
+        >
+          <div class="text-gold text-[15px] tracking-wide mb-4">★★★★★</div>
+          <p
+            class="text-[14.5px] leading-relaxed text-inkSoft font-medium mb-6"
+          >
+            "The WhatsApp invoice is the one feature every guest comments on. It
+            feels premium, and paper billing cost has dropped to near zero."
+          </p>
+          <div class="flex items-center gap-3 pt-5 border-t border-line">
+            <div
+              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-extrabold text-[13px]"
+            >
+              AK
+            </div>
+            <div>
+              <p class="text-[13.5px] font-extrabold">Ayesha Khan</p>
+              <p class="text-[12px] text-inkSoft font-medium">
+                Nawab's Kitchen, Lucknow
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl border border-line p-7 bg-white hover:shadow-cardHi transition-shadow"
+        >
+          <div class="text-gold text-[15px] tracking-wide mb-4">★★★★★</div>
+          <p
+            class="text-[14.5px] leading-relaxed text-inkSoft font-medium mb-6"
+          >
+            "Setup took one afternoon. Zero commission was the deciding factor —
+            we moved dine-in fully off the aggregator apps."
+          </p>
+          <div class="flex items-center gap-3 pt-5 border-t border-line">
+            <div
+              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-extrabold text-[13px]"
+            >
+              VS
+            </div>
+            <div>
+              <p class="text-[13.5px] font-extrabold">Vikram Sethi</p>
+              <p class="text-[12px] text-inkSoft font-medium">
+                The Grill Room, Chandigarh
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRICING — 3-tier plans with monthly/yearly toggle
+========================================================= -->
+    <section id="pricing" class="bg-bgSoft py-20 lg:py-24">
+      <div class="max-w-content mx-auto px-6 lg:px-8">
+        <div class="max-w-xl mx-auto text-center mb-10">
+          <span
+            class="text-[12.5px] font-extrabold tracking-wide uppercase text-primary"
+            >Simple, honest pricing</span
+          >
+          <h2
+            class="font-extrabold text-[clamp(1.9rem,3.4vw,2.7rem)] tracking-tight mt-3"
+          >
+            Simple Restaurant Management Software Pricing
+          </h2>
+          <p class="text-inkSoft mt-3 font-medium leading-relaxed">
+            No setup fee. No commission on orders. Cancel anytime.
+          </p>
+        </div>
+
+        <!-- Billing toggle -->
+        <div class="flex items-center justify-center gap-3 mb-12">
+          <span id="labelMonthly" class="text-[14px] font-extrabold text-ink"
+            >Monthly</span
+          >
+          <button
+            id="billingToggle"
+            type="button"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle yearly billing"
+            class="relative w-14 h-8 rounded-full bg-ink/15 transition-colors shrink-0"
+          >
+            <span
+              id="toggleDot"
+              class="absolute top-1 left-1 w-6 h-6 rounded-full bg-white shadow-md transition-transform"
+            ></span>
+          </button>
+          <span
+            id="labelYearly"
+            class="text-[14px] font-bold text-inkSoft flex items-center gap-2"
+          >
+            Yearly
+            <span
+              class="text-[11px] font-extrabold bg-mint/10 text-mint px-2 py-0.5 rounded-full"
+              >Save 20%</span
+            >
+          </span>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 items-start">
+          <!-- Starter -->
+          <div
+            class="rounded-2xl border border-line bg-white p-7 hover:shadow-cardHi transition-shadow"
+          >
+            <h3 class="font-extrabold text-lg">Starter</h3>
+            <p class="text-[13.5px] text-inkSoft font-medium mt-1.5">
+              Single outlet, up to 10 tables
+            </p>
+
+            <div class="mt-6 flex items-end gap-1.5">
+              <span
+                class="text-4xl font-extrabold price-amount"
+                data-monthly="999"
+                data-yearly="799"
+                >₹999</span
+              >
+              <span class="text-[14px] font-bold text-inkSoft mb-1.5"
+                >/month</span
+              >
+            </div>
+            <p class="text-[12px] text-inkSoft font-medium mt-1">
+              billed monthly, cancel anytime
+            </p>
+
+            <a
+              href="#cta"
+              class="btn-tactile mt-7 w-full inline-flex items-center justify-center gap-2 bg-white border-2 border-ink text-ink font-extrabold text-[14.5px] px-6 py-3.5 rounded-xl"
+            >
+              Get Started
+            </a>
+
+            <ul class="mt-7 space-y-3.5 text-[14px] font-medium text-inkSoft">
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >QR menu &amp; ordering
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Kitchen display screen
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >WhatsApp invoicing
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Email support
+              </li>
+            </ul>
+          </div>
+
+          <!-- Growth — highlighted -->
+          <div
+            class="relative rounded-2xl bg-ink text-white p-7 shadow-popLg md:-mt-4 md:mb-4"
+          >
+            <span
+              class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11.5px] font-extrabold uppercase tracking-wide px-4 py-1.5 rounded-full whitespace-nowrap shadow-pop"
+              >Most Popular</span
+            >
+
+            <h3 class="font-extrabold text-lg">Growth</h3>
+            <p class="text-[13.5px] text-white/60 font-medium mt-1.5">
+              Single outlet, unlimited tables
+            </p>
+
+            <div class="mt-6 flex items-end gap-1.5">
+              <span
+                class="text-4xl font-extrabold price-amount"
+                data-monthly="2499"
+                data-yearly="1999"
+                >₹2,499</span
+              >
+              <span class="text-[14px] font-bold text-white/60 mb-1.5"
+                >/month</span
+              >
+            </div>
+            <p class="text-[12px] text-white/50 font-medium mt-1">
+              billed monthly, cancel anytime
+            </p>
+
+            <a
+              href="#cta"
+              class="btn-tactile mt-7 w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primaryDark text-white font-extrabold text-[14.5px] px-6 py-3.5 rounded-xl shadow-pop"
+            >
+              Get Started
+            </a>
+
+            <ul class="mt-7 space-y-3.5 text-[14px] font-medium text-white/75">
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-primary"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Everything in Starter
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-primary"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Live order analytics
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-primary"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Menu &amp; inventory sync
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-primary"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Priority WhatsApp support
+              </li>
+            </ul>
+          </div>
+
+          <!-- Enterprise -->
+          <div
+            class="rounded-2xl border border-line bg-white p-7 hover:shadow-cardHi transition-shadow"
+          >
+            <h3 class="font-extrabold text-lg">Enterprise</h3>
+            <p class="text-[13.5px] text-inkSoft font-medium mt-1.5">
+              Multi-outlet chains &amp; franchises
+            </p>
+
+            <div class="mt-6 flex items-end gap-1.5">
+              <span class="text-4xl font-extrabold">Custom</span>
+            </div>
+            <p class="text-[12px] text-inkSoft font-medium mt-1">
+              volume pricing per outlet
+            </p>
+
+            <a
+              href="#cta"
+              class="btn-tactile mt-7 w-full inline-flex items-center justify-center gap-2 bg-white border-2 border-ink text-ink font-extrabold text-[14.5px] px-6 py-3.5 rounded-xl"
+            >
+              Talk to Sales
+            </a>
+
+            <ul class="mt-7 space-y-3.5 text-[14px] font-medium text-inkSoft">
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Everything in Growth
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Multi-outlet dashboard
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Custom integrations
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg
+                  class="shrink-0 mt-0.5 text-mint"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 12l5 5L20 7" /></svg
+                >Dedicated account manager
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FAQ — SEO + customer questions
+========================================================= -->
+    <section id="faq" class="bg-white py-20 lg:py-24">
+      <div class="max-w-content mx-auto px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center mb-12">
+          <span
+            class="text-[12.5px] font-extrabold tracking-wide uppercase text-primary"
+          >
+            Frequently asked questions
+          </span>
+
+          <h2
+            class="font-extrabold text-[clamp(1.9rem,3.4vw,2.7rem)] tracking-tight mt-3"
+          >
+            Frequently Asked Questions About Chotu
+          </h2>
+
+          <p class="text-inkSoft mt-3 font-medium leading-relaxed">
+            Everything you need to know about Chotu's QR ordering and restaurant
+            management platform.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              What is Chotu?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Chotu is a QR ordering and restaurant management platform that
+              helps restaurants manage digital menus, table orders, kitchen
+              operations, billing and payments from one platform.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              Do customers need to install an app to place an order?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              No. Customers can scan the restaurant's table QR code using their
+              phone camera and open the digital menu without downloading an app.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              How does QR ordering work in a restaurant?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Guests scan the QR code at their table, open the digital menu,
+              select items and place their order. The order is sent to the
+              kitchen display with the table information so staff can prepare
+              and serve it.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              Does Chotu provide a digital menu?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Yes. Chotu provides a digital restaurant menu that customers can
+              open directly from the table QR code. Restaurants can showcase
+              categories, photos and item availability.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              Can Chotu send orders to the kitchen?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Yes. Orders placed through the QR ordering system are shown on the
+              kitchen display along with the table information, helping
+              restaurant teams reduce order mix-ups.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              Does Chotu support restaurant billing?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Yes. Chotu supports restaurant billing and WhatsApp invoicing,
+              allowing teams to generate bills and share invoices with
+              customers.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              Does Chotu charge commission on orders?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Chotu currently offers 0% commission on orders. The pricing plans
+              are subscription-based, with no commission on orders.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-line bg-white p-6">
+            <summary
+              class="cursor-pointer list-none flex items-center justify-between gap-6 font-extrabold text-[15px] sm:text-[16px]"
+            >
+              How much does Chotu cost?
+              <span
+                class="text-primary text-xl transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              class="mt-4 text-[14.5px] text-inkSoft leading-relaxed font-medium"
+            >
+              Chotu's Starter plan is ₹999 per month and the Growth plan is
+              ₹2,499 per month. Enterprise pricing is customized for
+              multi-outlet restaurants and franchises.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CTA STRIP — lead capture, full-punch red
+========================================================= -->
+    <section id="cta" class="relative bg-primary overflow-hidden">
+      <div
+        class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-white/10 blur-3xl"
+      ></div>
+
+      <div
+        class="relative max-w-content mx-auto px-6 lg:px-8 py-20 lg:py-24 text-center"
+      >
+        <h2
+          class="font-extrabold text-white text-[clamp(2rem,4.4vw,3.2rem)] tracking-tight max-w-2xl mx-auto"
+        >
+          Print your first QR ticket this week
+        </h2>
+        <p
+          class="mt-4 text-white/85 text-[16px] max-w-md mx-auto leading-relaxed font-medium"
+        >
+          Set up your menu, tables, and WhatsApp billing in one afternoon. No
+          card required.
+        </p>
+
+        <form
+          class="mt-9 max-w-md mx-auto flex flex-col sm:flex-row gap-3"
+          onsubmit="event.preventDefault()"
+        >
+          <input
+            type="email"
+            required
+            placeholder="Enter your work email"
+            class="flex-1 bg-white border border-white rounded-xl px-5 py-3.5 text-[14.5px] font-semibold text-ink placeholder-inkSoft/60 outline-none focus:ring-2 focus:ring-white/60"
+          />
+          <button
+            type="submit"
+            class="btn-tactile inline-flex items-center justify-center gap-2 bg-ink hover:bg-black text-white font-extrabold text-[14.5px] px-6 py-3.5 rounded-xl shrink-0"
+          >
+            Get Started Now
+          </button>
+        </form>
+        <p class="mt-4 text-[12.5px] text-white/70 font-semibold">
+          Join Chotu.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+    <footer class="bg-ink text-white/60">
+      <div class="max-w-content mx-auto px-6 lg:px-8 pt-16 pb-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-14">
+          <div>
+            <a href="#" class="flex items-center gap-2 mb-4">
+              <span
+                class="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center font-extrabold text-sm"
+                >C</span
+              >
+              <span class="text-lg font-extrabold text-white">Chotu</span>
+            </a>
+            <p class="text-[13.5px] leading-relaxed max-w-xs font-medium">
+              The QR ordering and kitchen-to-bill platform built for restaurants
+              across India.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-[12px] font-extrabold tracking-wide uppercase text-white/80 mb-4"
+            >
+              Product
+            </h4>
+            <ul class="space-y-2.5 text-[13.5px] font-medium">
+              <li>
+                <a href="#workflow" class="hover:text-white transition-colors"
+                  >Workflow</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Kitchen display</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >WhatsApp billing</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="hover:text-white transition-colors"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[12px] font-extrabold tracking-wide uppercase text-white/80 mb-4"
+            >
+              Company
+            </h4>
+            <ul class="space-y-2.5 text-[13.5px] font-medium">
+              <li>
+                <a href="#partners" class="hover:text-white transition-colors"
+                  >Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="hover:text-white transition-colors"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[12px] font-extrabold tracking-wide uppercase text-white/80 mb-4"
+            >
+              Follow
+            </h4>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="X"
+                class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M4 4l16 16M20 4L4 20" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 13v4" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-[12.5px] font-medium"
+        >
+          <span>© 2026 Chotu. All rights reserved.</span>
+          <span>Made for restaurants across India</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ---- Pricing: monthly / yearly toggle ----
+      const billingToggle = document.getElementById("billingToggle");
+      const toggleDot = document.getElementById("toggleDot");
+      const labelMonthly = document.getElementById("labelMonthly");
+      const labelYearly = document.getElementById("labelYearly");
+      const priceEls = document.querySelectorAll(".price-amount");
+
+      function setBilling(isYearly) {
+        billingToggle.setAttribute("aria-checked", String(isYearly));
+        billingToggle.classList.toggle("bg-primary", isYearly);
+        billingToggle.classList.toggle("bg-ink/15", !isYearly);
+        toggleDot.style.transform = isYearly
+          ? "translateX(24px)"
+          : "translateX(0)";
+        labelMonthly.classList.toggle("text-ink", !isYearly);
+        labelMonthly.classList.toggle("text-inkSoft", isYearly);
+        labelMonthly.classList.toggle("font-extrabold", !isYearly);
+        labelMonthly.classList.toggle("font-bold", isYearly);
+        labelYearly.classList.toggle("text-ink", isYearly);
+        labelYearly.classList.toggle("text-inkSoft", !isYearly);
+
+        priceEls.forEach((el) => {
+          const val = isYearly ? el.dataset.yearly : el.dataset.monthly;
+          el.textContent = "₹" + Number(val).toLocaleString("en-IN");
+        });
+      }
+
+      let yearly = false;
+      billingToggle.addEventListener("click", () => {
+        yearly = !yearly;
+        setBilling(yearly);
+      });
+      setBilling(false);
+
+      // ---- Mobile nav toggle ----
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const iconOpen = document.getElementById("menuIconOpen");
+      const iconClose = document.getElementById("menuIconClose");
+
+      function closeMenu() {
+        mobileMenu.classList.add("hidden");
+        iconOpen.classList.remove("hidden");
+        iconClose.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      function toggleMenu() {
+        const isHidden = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        iconOpen.classList.toggle("hidden", isHidden);
+        iconClose.classList.toggle("hidden", !isHidden);
+        menuBtn.setAttribute("aria-expanded", String(isHidden));
+      }
+      menuBtn.addEventListener("click", toggleMenu);
+      mobileMenu
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", closeMenu));
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) closeMenu();
+      });
+
+      const PARTNERS = [
+        {
+          name: "Saffron Tadka",
+          loc: "Jaipur, RJ",
+          tag: "North Indian",
+          rating: 4.9,
+        },
+        {
+          name: "Nawab's Kitchen",
+          loc: "Lucknow, UP",
+          tag: "Mughlai",
+          rating: 4.8,
+        },
+        {
+          name: "Coastal Curry House",
+          loc: "Kochi, KL",
+          tag: "Seafood",
+          rating: 4.9,
+        },
+        { name: "Thali & Co", loc: "Pune, MH", tag: "Vegetarian", rating: 4.7 },
+        {
+          name: "The Grill Room",
+          loc: "Chandigarh, PB",
+          tag: "BBQ & Grill",
+          rating: 4.8,
+        },
+        {
+          name: "Spice Route Cafe",
+          loc: "Goa, GA",
+          tag: "Multi-cuisine",
+          rating: 4.9,
+        },
+      ];
+
+      function partnerCard(p) {
+        return `
+      <div class="w-[240px] shrink-0 rounded-2xl border border-line p-5 bg-white shadow-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-extrabold text-[13px]">${p.name.charAt(0)}</div>
+          <div>
+            <p class="text-[13.5px] font-extrabold leading-tight">${p.name}</p>
+            <p class="text-[11.5px] text-inkSoft font-medium">${p.loc}</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-[12px] font-semibold">
+          <span class="text-gold">★★★★★ <span class="text-inkSoft">${p.rating}</span></span>
+          <span class="text-inkSoft">${p.tag}</span>
+        </div>
+      </div>`;
+      }
+
+      const track = document.getElementById("partnerTrack");
+      const cardsHtml = PARTNERS.map(partnerCard).join("");
+      track.innerHTML = cardsHtml + cardsHtml;
+    </script>
+  </body>
+</html>
